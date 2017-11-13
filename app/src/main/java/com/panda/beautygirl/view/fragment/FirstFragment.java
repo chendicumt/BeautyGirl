@@ -57,6 +57,10 @@ public class FirstFragment extends Fragment implements IGirlView{
             presenter = new MyPresenter(this);
             presenter.prepare();
         }
+        else {
+            Toaster.toast(MyApplication.getContext(),"网络链接不可用");
+
+        }
         downSwipRefresh();
 //        upSwipRefresh();
         return view;

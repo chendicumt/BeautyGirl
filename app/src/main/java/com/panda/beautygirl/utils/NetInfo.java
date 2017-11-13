@@ -16,7 +16,7 @@ public class NetInfo {
 //       获取网络相关信息
         NetworkInfo info = manager.getActiveNetworkInfo();
         if (info == null || !info.isAvailable()) {
-            Toaster.toast(context, "网络链接不可用");
+
             return false;
         } else {
             if (info.getType() == manager.TYPE_WIFI) {
